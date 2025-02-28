@@ -1,0 +1,178 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    width: 100%;
+   
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+   
+}
+
+.nav-menuu{
+    display: flex;
+    list-style: none;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+Link{
+    text-decoration: none;
+}
+
+.navbar ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+hr{
+    height: 5px;
+    background-color: red;
+    width: 100%;
+}
+
+.login-cart{
+    display: flex;
+    gap: 40px;
+}
+.login-cart button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    outline: 2px solid grey;
+}
+.login-cart img{
+    width: 30px;
+}
+
+.cart{
+    position: relative;
+    cursor: pointer;
+}
+
+.cart span{
+    height: 25px;
+    width: 20px;
+    position: absolute;
+    top: -11px;;
+    right: -8px;
+    padding: 0px 3px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.nav-drop{
+    display:none ;
+    width: 30px;
+}
+
+.logoo{
+    display: flex;
+    align-items: center;
+
+}
+.logoo h3{
+
+font-size: 1.7rem;
+font-weight: 500;
+margin-left: 10px;
+
+}
+
+  
+@media (max-width:700px) {
+
+   
+.nav-drop{
+    display:block ;
+    width: 30px;
+    rotate: -90deg;
+
+    transition: 0.5s;
+}
+
+.nav-menuu{
+    display: none;  /* Hidden by default */
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    top: 80px;
+    left: 0;
+}
+
+.menu-visble {
+    display: flex; /* This will show the menu */
+}
+
+.nav-drop.open{
+    transform: rotate(90deg);
+
+}
+    
+}
+
+@media (max-width:500px){
+    .navbar{
+        padding: 0px 10px;
+        height: 60px;
+        padding: 10px 20px;
+    }
+    .logoo h3{
+
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 10px;
+        
+        }
+    .logo{
+        width: 40px;
+    }
+    
+    .login-cart{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .login-cart button{
+        padding: 5px 10px;
+    }
+    .cart span{
+        height: 20px;
+        width: 15px;
+        font-size: 14px;
+        position: absolute;
+        top: -5px;;
+        right: -6px;
+        padding: 0px 3px;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+
+    .nav-menuu{
+        
+        top: 50px;
+        font-size: 14px;
+        gap: 25px;
+    }
+
+    .login-cart img{
+        width: 25px;
+        margin-top: 5px;
+    }
+}

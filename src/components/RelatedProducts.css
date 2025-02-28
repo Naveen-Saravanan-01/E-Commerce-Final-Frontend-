@@ -1,0 +1,43 @@
+.rel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    overflow-x: hidden;
+    width: 90%;
+    margin: auto;
+    
+    text-align: center;
+    margin-top: 100px;
+    
+    
+}
+
+.rel-container h1{
+    font-size: 30px;
+}
+
+.rel-container hr{
+    width: 150px;
+    height: 6px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #252525;
+
+}
+
+.rel-map-item{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.rel-container h1{
+    display: block;
+}

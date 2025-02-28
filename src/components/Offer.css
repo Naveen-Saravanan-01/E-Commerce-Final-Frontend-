@@ -1,0 +1,121 @@
+.offer{
+   background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+   width: 70%;
+   height: auto;
+   margin: 0px auto;
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   /* padding-bottom: 50px; */
+   justify-content: space-between;
+}
+
+.offer-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin-left: 50px;
+
+    
+}
+
+.ex{
+    margin-bottom: 5px;
+}
+h1{
+    font-size: 50px;
+
+
+}
+.offer-left button{
+    margin-top: 0px;
+    width: 140px;
+    background-color: orangered;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+
+}
+.offer-left p{
+    margin: 20px 0;
+}
+
+.offer-right img{
+    height: 380px;
+    margin-right: 50px;
+}
+
+@media (max-width:700px) {
+    .offer{
+        background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        justify-content: space-between;
+     }
+
+    
+    h1{
+        font-size: 30px;
+    
+    
+    }
+    .ex{
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media (max-width:500px){
+
+    .offer{
+        background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+     }
+
+     .offer-right img{
+        height: 250px;
+        margin: 0;
+        
+    }
+    .offer-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .offer-left h1{
+     
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0;
+        /* margin-top: 20px; */
+    }
+    .offer-left{
+        margin: 0;
+    }
+    .offer-left button{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .offer-left p{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+
+
+
+}

@@ -5,6 +5,8 @@ import "aos/dist/aos.css"
 
 export const ShopContext = createContext(null);
 
+
+
 const ShopContextProvider = (props) => {
 
 
@@ -44,6 +46,15 @@ const ShopContextProvider = (props) => {
 
 
   const [cartItem, setCartItems] = useState(() => {
+
+    
+const getDefaultCart = () => {
+  let cart = {};
+  all_product.forEach((product) => {
+      cart[product.id] = 0;
+  });
+  return cart;
+};
 
            const savedCart = localStorage.getItem("cart");
          return savedCart ? JSON.parse(savedCart) : getDefaultCart();

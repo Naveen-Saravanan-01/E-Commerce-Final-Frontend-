@@ -29,12 +29,12 @@ const Login = () => {
 
     try{
 
-    const {data} = await axios.post('http://localhost:4000/api/users/login',form)
+    const {data} = await axios.post('https://e-commerce-final-backend.onrender.com/login',form)
 
     if(data.success){
       localStorage.setItem('token',data.token)
       alert('Login Successfully')
-      navigate('/profile')
+      navigate('/')
     }else{
         alert(data.message)
     }

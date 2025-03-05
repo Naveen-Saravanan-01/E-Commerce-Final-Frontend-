@@ -50,6 +50,7 @@ hr{
     border: none;
     background: none;
     outline: 2px solid grey;
+    cursor:pointer;
 }
 .login-cart img{
     width: 30px;
@@ -61,16 +62,19 @@ hr{
 }
 
 .cart span{
-    height: 25px;
+    height: 22px;
     width: 20px;
     position: absolute;
-    top: -11px;;
+    top: -10px;;
     right: -8px;
     padding: 0px 3px;
     border-radius: 50%;
     background-color: red;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-drop{
@@ -99,11 +103,12 @@ margin-left: 10px;
     display:block ;
     width: 30px;
     rotate: -90deg;
-
     transition: 0.5s;
+
 }
 
 .nav-menuu{
+
     display: none;  /* Hidden by default */
     height: 80px;
     width: 100%;
@@ -111,11 +116,13 @@ margin-left: 10px;
     background-color: white;
     justify-content: center;
     top: 80px;
-    left: 0;
+    left: 0; 
+
 }
 
 .menu-visble {
-    display: flex; /* This will show the menu */
+    display: flex;
+    
 }
 
 .nav-drop.open{
@@ -174,5 +181,8 @@ margin-left: 10px;
     .login-cart img{
         width: 25px;
         margin-top: 5px;
+    }
+    .nav-drop{
+        width: 25px;
     }
 }

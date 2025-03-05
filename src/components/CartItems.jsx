@@ -2,11 +2,14 @@ import React, { useContext } from 'react';
 import './CartItems.css';
 import { ShopContext } from './ShopContext';
 import remove_icon from '../assets/cart_cross_icon.png';
+import { useNavigate } from 'react-router-dom';
 
 const CartItems = () => {
     const { all_product, cartItem, removeCart ,getTotal, getTotalAmount} = useContext(ShopContext);
 
     console.log("Cart Items:", cartItem);
+
+    const navigate =useNavigate();
 
     return (
         <div className='cartItems'>
@@ -76,7 +79,10 @@ const CartItems = () => {
                     
                     </div>
 
-                    <button>Proceed to checkout</button>
+                    <button onClick={() => {localStorage.getItem('token') ? navigate('/order', { state: { cartData: cartItem, totalAmount: getTotalAmount() } }) : alert("Please Login to Order")}}>
+    Proceed to checkout
+</button>
+
                     
                 </div>
            

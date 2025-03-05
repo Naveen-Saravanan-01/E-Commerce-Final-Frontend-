@@ -11,6 +11,8 @@ import LoginSignup from './pages/LoginSignup'
 import LoginPage from './pages/LoginPage'
 import ProductPage from './pages/ProductPage'
 import Cart from './pages/Cart'
+import OderPage from './pages/OderPage'
+import OrderSummary from './pages/OrderSummary'
 
 
 
@@ -39,6 +41,11 @@ const App = () => {
             <Route path='/login' element={<LoginPage/>} />
 
             <Route path='/cart' element={<Cart/>} />
+
+            <Route path='/order' element={<OderPage/>} />
+
+            <Route path='/order-summary' element={<OrderSummary/>} />
+
 
             
 

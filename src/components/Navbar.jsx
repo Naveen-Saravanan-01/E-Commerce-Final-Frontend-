@@ -45,7 +45,11 @@ const Navbar = () => {
                 </ul>
 
                 <div className='login-cart'>
-                    <button><Link to='/register' style={{ textDecoration: "none", color: "inherit" }}>Login</Link></button>
+
+                    {localStorage.getItem('token')?<><button onClick={()=>{localStorage.removeItem('token'); navigate('/')}}>LogOut</button></> : <><button><Link to='/register' style={{ textDecoration: "none", color: "inherit" }}>Login</Link></button>
+                    </>}
+
+
                     
                     {/* Cart with dynamic count */}
                     <div className='cart' onClick={() => navigate('/cart')}>

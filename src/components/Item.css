@@ -1,5 +1,6 @@
 .item{
-    width: 250px;
+    width: 220px;
+    /* height: 420px; */
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -51,11 +52,20 @@
     margin-top: 2px;
 }
 
+@media (max-width:1220px) {
+
+    .item{
+        width: 200px;
+        gap: 5px;
+    }
+    
+}
+
 
 @media (max-width:1120px) {
 
     .item{
-        width: 200px;
+        width: 180px;
         gap: 5px;
     }
 
@@ -66,7 +76,7 @@
 @media (max-width:890px) {
 
     .item{
-        width: 150px;
+        width: 160px;
         gap: 5px;
     }
 
@@ -96,6 +106,7 @@
         width: 180px;
         gap: 10px;
         margin: 10px;
+        /* height: 350px; */
     }
 
     .item img{
@@ -109,14 +120,14 @@
 @media (max-width:450px){
 
     .item{
-        width: 137px;
+        width: 130px;
         gap: 5px;
         margin: 5px;
         padding: 10px;
     }
 
     .item img{
-        width: 240px;
+        width: 1550px;
     }
 
     .item p{

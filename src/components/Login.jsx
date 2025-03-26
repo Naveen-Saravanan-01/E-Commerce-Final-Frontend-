@@ -29,7 +29,7 @@ const Login = () => {
 
     try{
 
-    const {data} = await axios.post('https://e-commerce-final-backend.onrender.com/login',form)
+    const {data} = await axios.post('https://e-commerce-final-backend-production.up.railway.app/login',form)
 
     if(data.success){
       localStorage.setItem('token',data.token)
@@ -65,7 +65,7 @@ const Login = () => {
 
       <input type="text" required name='email' onChange={handleChange} placeholder='Enter your email'/>
       <input type="text" required name='password'  onChange={handleChange} placeholder='Password'/>
-
+      <Link to='/forgot-pass' className='for-link'>Forgot Password</Link>
       <button type='submit'>Log In</button>
 
       </form>

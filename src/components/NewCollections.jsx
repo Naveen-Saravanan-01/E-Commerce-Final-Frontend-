@@ -15,7 +15,7 @@ const NewCollections = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://e-commerce-final-backend.onrender.com/newCollection");
+        const response = await axios.get("https://e-commerce-final-backend-production.up.railway.app/newCollection");
         console.log("Fetched products:", response.data);
         setNew_collection(response.data);
       } catch (error) {

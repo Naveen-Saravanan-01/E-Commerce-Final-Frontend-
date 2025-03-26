@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: center;
 }
+.logo-footer img{
+    margin-top: 30px;
+    width: 150px;
+}
 .list ul{
     margin-top: 30px;
     display: flex;

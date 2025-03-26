@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import new_logo from '../assets/brand5.png'
 import logo from '../assets/logo.png'
 import insta from '../assets/instagram_icon.png'
 import pin from '../assets/pintester_icon.png'
@@ -10,8 +11,9 @@ const Footer = () => {
   return (
     <div className='footer-container'>
         <div className="logo-footer">
-            <img src={logo} alt="" />
-            <h2>SHOPPERS</h2>
+            <img src={new_logo} alt="" />
+            {/* <img src={logo} alt="" />
+            <h2>SHOPPERS</h2> */}
         </div>
 
         <div className="list">

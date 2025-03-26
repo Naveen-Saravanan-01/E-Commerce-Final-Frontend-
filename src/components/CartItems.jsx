@@ -79,7 +79,17 @@ const CartItems = () => {
                     
                     </div>
 
-                    <button onClick={() => {localStorage.getItem('token') ? navigate('/order', { state: { cartData: cartItem, totalAmount: getTotalAmount() } }) : alert("Please Login to Order")}}>
+                    <button
+  onClick={() => {
+    if (localStorage.getItem("token")) {
+      navigate("/order", { state: { cartData: cartItem, totalAmount: getTotalAmount() } });
+    } else {
+      alert("Please Login to Order");
+      navigate("/register");
+      window.scrollTo(0, 0);
+    }
+  }}
+>
     Proceed to checkout
 </button>
 

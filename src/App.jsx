@@ -13,6 +13,9 @@ import ProductPage from './pages/ProductPage'
 import Cart from './pages/Cart'
 import OderPage from './pages/OderPage'
 import OrderSummary from './pages/OrderSummary'
+import OrderedProduct from './pages/OrderedProduct'
+import ForgotPage from './pages/ForgotPage'
+import NewPass from './pages/NewPass'
 
 
 
@@ -45,6 +48,17 @@ const App = () => {
             <Route path='/order' element={<OderPage/>} />
 
             <Route path='/order-summary' element={<OrderSummary/>} />
+
+            <Route path='/my-orders' element={<OrderedProduct/>} />
+
+            <Route path='/forgot-pass' element={<ForgotPage/>} />
+
+
+
+            <Route path='/new-password' element={<NewPass/>} />
+
+
+
 
 
             

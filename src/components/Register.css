@@ -7,6 +7,9 @@
     gap: 20px;
     margin: 20px;
   }
+  .for-link{
+    text-align: right;
+  }
   
   .register form{
     display: flex;

@@ -1,21 +1,49 @@
 .hero-container{
+    background: linear-gradient(180deg,#fed9b7 0%,#e1ffea22 60%);
+
     display: flex;
+    
     align-items: center;
     justify-content: space-around;
     width: 100%;
     min-width: 100vw; 
+    height: auto;
+
     flex-wrap: wrap;
     overflow-x: hidden;   
-    margin-top: 80px;
-    background: linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    margin-top: 0px;
+    overflow-y: hidden;
 
 }
+
+
+.right-div {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-slide-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  
+    transition: opacity 1s ease-in-out;
+      
+      
+  }
+  
+
 
 .left-div{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+
 
 .left-div h1 img{
     width: 40px;
@@ -30,7 +58,7 @@
 }
 
 .left-div button{
-    padding: 10px 0px;
+    padding: 10px 20px;
     width: 200px;
     background-color: rgb(255, 84, 22);
     border: none;
@@ -39,16 +67,42 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin-top: 20px;
     font-size: 18px;
 }
 
-.right-div img{
-    height: 85vh;
+
+
+@media (max-width:1000px){
+
+
+    
+
+
+
+
+
 }
 
 
+@media (max-width:900px){
+
+    .left-div h1{
+        font-size: 30px;
+    }
+    
+    .left-div p{
+        font-size: 20px;
+    }
+    .right-div{
+        max-width: 400px;
+    }
+
+
+
+
+}
 @media (max-width:700px) {
 
     .hero-container{
@@ -56,13 +110,22 @@
         flex-direction: column;
         width: 100%;
         flex-wrap: wrap;
+        height: 100vh;
     }
 
     .right-div img{
         height: 500px;
     }
-    .left-div p{
-        margin-top: 20px;}
+    
+
+    
+        .left-div{
+            margin-top: 20px;
+        }
+    
+        .hero-container{
+            height: auto;
+        }
 
     
 
@@ -72,20 +135,17 @@
 @media (max-width:500px){
 
     .hero-container{
-
-
-    margin-top: 60px;
+        margin-top: 0px;
+        height: auto;
     }
 
     .left-div p{
-        margin-top: 20px;
-        /* text-align: center; */
+        margin-top: 0px;
         font-size: 20px;
     }
     .left-div h1{
         font-size: 25px;
         font-weight: 600;
-        /* text-align: center; */
     }
     .right-div img{
         height: 300px;

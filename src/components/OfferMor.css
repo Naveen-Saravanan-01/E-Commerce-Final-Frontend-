@@ -1,0 +1,48 @@
+.marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    margin-top: 80px;
+
+  }
+  
+  .marquee-track {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite; 
+  }
+  
+  .offer-item {
+    flex: 0 0 auto;
+    margin-right: 50px; 
+    font-size: 15px;
+    color: #ffffff;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  @media (max-width:500px) {
+
+    .marquee-wrapper{
+      margin-top: 60px;
+      padding: 7px 0;
+    }
+    .marquee-track {
+      display: flex;
+      white-space: nowrap;
+      animation: scrollText 7s linear infinite; /* Speed of scroll */
+    }
+
+    
+  }
+  

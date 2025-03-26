@@ -1,0 +1,47 @@
+.newpass-div{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(219, 218, 218);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.input-new{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.input-new input{
+    height: 40px;
+    padding: 20px;
+    border: none;
+    outline: 1px solid white;
+    border-radius: 5px;
+}
+
+.input-new button{
+    width: 150px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    cursor: pointer;
+
+
+}
+
+@media (max-width:550px) {
+
+    .newpass-div{
+
+        margin: 20px;
+    }
+    
+}

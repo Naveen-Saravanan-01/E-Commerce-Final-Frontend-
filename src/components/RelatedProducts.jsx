@@ -15,7 +15,7 @@ const Popular = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://e-commerce-final-backend.onrender.com/popularCollection");
+        const response = await axios.get("https://e-commerce-final-backend-production.up.railway.app/popularCollection");
         console.log("Fetched products:", response.data);
         setData(response.data);
       } catch (error) {

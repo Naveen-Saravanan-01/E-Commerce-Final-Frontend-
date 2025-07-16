@@ -27,9 +27,16 @@ const Footer = () => {
         </div>
 
             <div className='logos'>
-                <img src={insta} alt="" />
-                <img src={pin} alt="" />
-                <img src={whats} alt="" />
+                <a href="https://www.instagram.com/_ck_charlee_/" target="_blank" rel="noopener noreferrer">
+                <img src={insta} alt="Instagram Profile" />
+                </a>
+
+                <a href="https://in.pinterest.com/saravanannaveen2" target="_blank" rel="noopener noreferrer">
+                <img src={pin} alt="Pinterest" />
+                </a>                
+                <a href="https://wa.me/8110927335" target="_blank" rel="noopener noreferrer">
+                <img src={whats} alt="Chat on WhatsApp" />
+                </a>
             </div>
 
             <hr />

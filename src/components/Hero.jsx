@@ -33,6 +33,17 @@ const Hero = () => {
     }, 1000);
   }, []);
 
+
+
+function scrollPage() {
+  const element = document.getElementById("popular-products");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+
+
   return (
     <div className='hero-container'>
       <div className='left-div'>
@@ -40,7 +51,9 @@ const Hero = () => {
         <h1 data-aos="fade-right" data-aos-delay="100">Get Ready </h1>
         <h1 data-aos="fade-left" data-aos-delay="100">To Find Your Styles</h1>
         {/* <h1 data-aos="fade-right" data-aos-delay="100">for everyone</h1> */}
-        <button>SHOP NOW<img src={arrow} alt="arrow" /></button>
+        <button onClick={scrollPage}>
+        SHOP NOW <img src={arrow} alt="arrow" />
+        </button>
       </div>
 
       <div className="right-div">

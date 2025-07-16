@@ -6,6 +6,7 @@ import './Popular.css'
 import AOS from 'aos'
 import "aos/dist/aos.css"
 import axios from 'axios'
+import Hero from './Hero'
 
 const Popular = () => {
 
@@ -34,9 +35,9 @@ const Popular = () => {
     },[])
 
   return (
-    <div className='popular-container'>
+    <div className='popular-container' >
 
-      <h1>POPULAR IN WOMEN</h1>
+      <h1 id="popular-products">POPULAR IN WOMEN</h1>
       <hr />
 
       <div className='map-item' data-aos='fade-left'>
